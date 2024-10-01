@@ -1,0 +1,22 @@
+/* components/AnimatedElement.css */
+.animated-element {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .slide-up {
+    opacity: 1;
+    transform: translateY(300);
+  }
+  
+  /* 必要に応じて他のアニメーションクラスを追加 */
+
+  .rotate {
+    opacity: 1;
+    transform: rotate(360deg);
+  }

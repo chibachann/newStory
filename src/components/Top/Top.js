@@ -2,16 +2,19 @@ import React from "react";
 import * as styles from "./Top.module.css";
 
 import TopSmallBox from "../TopSmallBox/TopSmallBox";
+import AnimatedElement from "../AnimatedElement";
 
 const Top = () => {
     return (
         <div className={styles.Top}>
            <img src="/top/background.png" alt="background_top" className={styles.Background}/>
            <div className={styles.TextContent}>
+                <AnimatedElement animationClass="fade-in">
                 <h1 className={styles.Title}>
                     BEYOND<br/>
                     WEB-SITE
                 </h1>
+                </AnimatedElement>
                 <h2 className={styles.SubTitle}>
                     従来のウェブサイトの<br/>
                     その先へ
@@ -26,28 +29,7 @@ const Top = () => {
                 
 
                 <img src="/top/main.png" alt="main" className={styles.MainImage}/>
-                <div className={styles.SmallBoxes}>
-                    <TopSmallBox 
-                        title="OUR SERVICES"
-                        imgsrc="/top/service.png"
-                        alt={"service"}
-                    />
-                    <TopSmallBox 
-                        title="WORKS"
-                        imgsrc="/top/work.png"
-                        alt={"work"}
-                    />
-                    <TopSmallBox 
-                        title="FEATURE"
-                        imgsrc="/top/feature.png"
-                        alt={"feature"}
-                    />
-                    <TopSmallBox 
-                        title="CONTACT"
-                        imgsrc="/top/contact.png"
-                        alt={"contact"}
-                    />
-                </div>
+              
                 
             </div>
         </div>
