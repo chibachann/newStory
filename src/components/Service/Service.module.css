@@ -1,0 +1,73 @@
+.Service {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+.Background {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 100%;
+}
+.Light {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    object-fit: contain;
+}
+
+.Content {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: min-content;
+    place-items: center;
+}
+
+.Title {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.Title h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--font-family-gothic);
+}
+
+.Title h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Card {
+    margin: 20px 0;
+    border: 2px solid #1eb5d9;
+    width: 90%;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+}
+
+.Card img {
+    margin: 15px 0;
+    border-radius: 12px;
+    width: 90%;
+    object-fit: contain;
+}
+
+.Card h3 {
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.Card p {
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 20px 0;
+}

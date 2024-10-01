@@ -1,0 +1,17 @@
+.Header {
+    position: fixed;
+    display: grid;
+    height: 15vw;
+}
+
+.Logo {
+    display: grid;
+    place-items: center;
+    padding: 0 10px;
+}
+
+.Logo img {
+    height: 60px;
+    width: 30vw;
+    object-fit: contain;
+}

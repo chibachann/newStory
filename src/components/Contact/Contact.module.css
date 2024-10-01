@@ -1,0 +1,41 @@
+.Contact {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+
+.Content {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: min-content;
+    place-items: center;
+}
+
+.Title {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.Title h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--font-family-gothic);
+}
+
+.Title h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Text {
+    margin: 40px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-family-gothic);
+}
