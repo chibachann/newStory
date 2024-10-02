@@ -17,7 +17,14 @@ const Contact = () => {
                 </p>
 
                 <div className={styles.Container}>
-                    s
+                    <div className={styles.Question}>
+                        <p>どのようなプロジェクトをお望みですか？<span className={styles.red}>*</span></p>
+                        <div className={styles.ButtonArea}>
+                            <button>Webサイト制作</button>
+                            <button>Webアプリ制作</button>
+                            <button>その他</button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
