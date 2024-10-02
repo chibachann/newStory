@@ -1,8 +1,6 @@
 import React from "react";
 import * as styles from "./TopAndLoading.module.css";
 
-import TopSmallBox from "../TopSmallBox/TopSmallBox";
-import AnimatedElement from "../AnimatedElement";
 
 const Top = () => {
     return (

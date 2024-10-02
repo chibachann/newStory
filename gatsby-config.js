@@ -5,10 +5,15 @@ module.exports = {
         siteUrl: "https://www.storyweb-solutions.com",
         author: "chiba",
         lang: "ja",
-        image: "images/toi.jpg",
+        image: "topimage/topimage.jpg",
     },
     plugins: [
         `gatsby-plugin-sitemap`,
-        
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              icon: `static/favicon/favicon.png`, // 使用するファビコン画像のパス
+            },
+        },
     ],
 }

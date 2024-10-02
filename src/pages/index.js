@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Top from "../components/Top/Top";
 import TopAndLoading from "../components/TopAndLoading/TopAndLoading";
 import Feature from "../components/Feature/Feature";
 
@@ -23,3 +23,22 @@ const Index = () => {
 };
 
 export default Index;
+
+export const Head = () => {
+    const data = useStaticQuery(graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    `)
+    return (
+      <>
+       <title>{data.site.siteMetadata.title}</title>
+       <meta name="description" content={data.site.siteMetadata.description} />
+      </>
+    );
+  }
