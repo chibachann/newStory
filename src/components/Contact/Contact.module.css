@@ -65,10 +65,10 @@
 .Button {
     font-family: var(--font-family-mincho);
     font-size: 1rem;
-    background-color: #1a1a1a;
-    border: 1px solid #4d4d4d;
+    background-color: #004b99;
+    border: 1px solid #004b99;
     color: #eee;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 8px;
     cursor: pointer;
     margin: 10px;

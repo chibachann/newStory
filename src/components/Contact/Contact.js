@@ -22,19 +22,14 @@ const Contact = () => {
                     お手伝いをさせていただきます。
                 </p>
 
-                <div className={styles.Container}>
-                    <div className={styles.Question}>
-                        <p>どのようなプロジェクトをお望みですか？<span className={styles.red}>*</span></p>
-                        <div className={styles.ButtonArea}>
-                            <div className={styles.Button}>Webサイト制作</div>
-                            <div className={styles.Button}>Webアプリ制作</div>
-                            <div className={styles.Button}>その他</div>
-                        </div>
-
-                        <QuestionComponent />
-                    </div>
-                   
-                </div>
+                <a 
+                    href="https://forms.gle/P8qMyJXtx3vmMuYt5"
+                    className={styles.Button}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    お問い合わせフォームへ
+                </a>
 
             </div>
         </div>
