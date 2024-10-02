@@ -7,13 +7,7 @@ import AnimatedElement from "../AnimatedElement";
 const Top = () => {
     return (
         <div className={styles.Top}>
-            <div className={styles.Loading}>
-                <img src="background/OxfordBlue.png" alt="OxfordBlue" className={styles.loadingBackground} />
-                <div className={styles.loadingContent}>
-                    <img src="logo/loading_title_2.png" alt="Loading_2" className={styles.loadingImage} />
-                    <img src="logo/loading_title_1.png" alt="Loading_1" className={styles.loadingImage} />
-                </div>
-            </div>
+            
            <img src="/top/background.png" alt="background_top" className={styles.Background}/>
            <div className={styles.TextContent}>
                 <h1 className={styles.Title}>
@@ -36,6 +30,13 @@ const Top = () => {
                 <img src="/top/main.png" alt="main" className={styles.MainImage}/>
               
                 
+            </div>
+            <div className={styles.Loading}>
+                <img src="background/OxfordBlue.png" alt="OxfordBlue" className={styles.loadingBackground} />
+                <div className={styles.loadingContent}>
+                    <img src="logo/loading_title_2.png" alt="Loading_2" className={styles.loadingImage} />
+                    <img src="logo/loading_title_1.png" alt="Loading_1" className={styles.loadingImage} />
+                </div>
             </div>
         </div>
     );
