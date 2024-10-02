@@ -13,7 +13,7 @@ const Index = () => {
     return (
         <Layout>
             <TopAndLoading />
-            <Top />
+            
             <Feature />
             <Work />
             <Service />

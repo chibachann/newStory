@@ -1,7 +1,7 @@
 .Top {
     margin-bottom: 100px;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     display: grid;
     place-items: center;
     grid-template-rows: 1fr 1fr;
@@ -108,19 +108,30 @@
     height: calc(100% - 20px);
 }
 
-
-.loadingScreen {
+.Loading {
+    height: 100%;
     grid-column: 1/-1;
     grid-row: 1/-1;
-    height: 100%;
-    display: grid;
-    place-items: center;
     z-index: 1000;
-    opacity: 1;
-    transition: opacity 1s;
-  }
-  
-  .loadingContent {
+    display: grid;
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    pointer-events: none;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.loadingContent {
     grid-column: 1/-1;
     grid-row: 1/-1;
     width: 100%;
@@ -173,11 +184,4 @@
       opacity: 1;
     }
   }
-  
-  .loadingScreen.loaded {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  
   
