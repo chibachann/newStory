@@ -11,7 +11,7 @@ const Footer = () => {
                 </a>
             </div>
             <p className={styles.Text}>
-                SToRy web Solutions は、ウェブ開発を中心に、<br/>
+                SToRy web Solutions は、ウェブ開発を中心に、
                 お客様のビジネスをサポートする会社です。
             </p>
             

@@ -40,30 +40,30 @@
 }
 
 .Title h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: var(--font-family-gothic);
 }
 
 .Title h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 .CardBox {
-    margin-top: 2rem;
+    margin-top: 50px;
     grid-column: 1/-1;
     width: 90%;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    gap: 2rem;
+    gap: 50px;
 }
 
 .Card {
     display: grid;
     place-items: center;
-    height: 70vw;
+    padding: 20px 0 0 0;
     width: 80vw;
     border-radius: 16px;
     border: 1px solid #999999;
@@ -71,6 +71,7 @@
 }
 
 .Card img {
+    padding: 20px;
     height: 80px;
     width: 80px;
     object-fit: contain;

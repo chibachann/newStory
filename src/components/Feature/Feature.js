@@ -19,7 +19,7 @@ const Feature = () => {
                 <div className={styles.CardBox}>
                     <AnimatedElement>
                         <div className={styles.Card}>
-                            <img src="/feature/feature1.svg" alt="feature1"/>
+                            <img src="/feature/b.svg" alt="feature1"/>
                             <h3>モダンなデザイン</h3>
                             <p>
                                 トレンドに合わせたデザインは、ユーザーに好印象を与えます。私たちは常に最新のトレンドに合わせたデザインを提供しています。
