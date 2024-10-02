@@ -8,7 +8,7 @@ const Top = () => {
     return (
         <div className={styles.Top}>
             
-           
+           <img src="/top/background.png" alt="background_top" className={styles.Background}/>
            <div className={styles.TextContent}>
                 <h1 className={styles.Title}>
                     BEYOND<br/>
