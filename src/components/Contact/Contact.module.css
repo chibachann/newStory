@@ -60,4 +60,13 @@
 
 .ButtonArea {
     display: grid;
+
+}
+
+.ButtonArea button {
+    font-family: var(--font-family-mincho);
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    border: 1px solid #4d4d4d;
+    color: #eee;
 }
