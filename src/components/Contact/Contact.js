@@ -1,6 +1,8 @@
 import React from "react";
 import * as styles from "./Contact.module.css";
 
+import QuestionComponent from "../QuestionComponent/QuestionComponent";
+
 
 const Contact = () => {
     const projectQuestion = "どのようなプロジェクトをお望みですか？";
@@ -24,10 +26,12 @@ const Contact = () => {
                     <div className={styles.Question}>
                         <p>どのようなプロジェクトをお望みですか？<span className={styles.red}>*</span></p>
                         <div className={styles.ButtonArea}>
-                            <button>Webサイト制作</button>
-                            <button>Webアプリ制作</button>
-                            <button>その他</button>
+                            <div className={styles.Button}>Webサイト制作</div>
+                            <div className={styles.Button}>Webアプリ制作</div>
+                            <div className={styles.Button}>その他</div>
                         </div>
+
+                        <QuestionComponent />
                     </div>
                    
                 </div>
