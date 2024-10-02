@@ -39,3 +39,11 @@
     font-weight: 400;
     font-family: var(--font-family-gothic);
 }
+
+.Container {
+    grid-column: 1/-1;
+    width: 90vw;
+    display: grid;
+    border-radius: 16px;
+    border: 2px solid #cccccc;
+}

@@ -16,7 +16,10 @@ const Contact = () => {
                     お手伝いをさせていただきます。
                 </p>
 
-                
+                <div className={styles.Container}>
+                    s
+                </div>
+
             </div>
         </div>
     );
