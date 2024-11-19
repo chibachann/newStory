@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-newstorywebsolution-dev-b1dcb-authRole",
+      "UnauthRoleArn": "arn:aws:iam::269545346091:role/amplify-newstorywebsolution-dev-b1dcb-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::269545346091:role/amplify-newstorywebsolution-dev-b1dcb-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-newstorywebsolution-dev-b1dcb-deployment",
+      "UnauthRoleName": "amplify-newstorywebsolution-dev-b1dcb-unauthRole",
+      "StackName": "amplify-newstorywebsolution-dev-b1dcb",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:269545346091:stack/amplify-newstorywebsolution-dev-b1dcb/c64bb6e0-a650-11ef-8e08-0a1462479aa3",
+      "AmplifyAppId": "d2wiqqwogig5la"
+    }
+  }
+}

@@ -1,11 +1,19 @@
 module.exports = {
     siteMetadata: {
-        title: 'Story Web Solutions',
-        description: "クリエイティブなデジタルソリューションで、あなたのビジネスストーリーを紡ぐ。最先端のウェブデザインと技術で、お客様のビジョンを現実に。",
+        title: 'ウェブサイト制作・ホームページ作成 | Story Web Solutions',
+        description: "【東京・千葉】プロフェッショナルなウェブサイト制作・ホームページ制作なら Story Web Solutions。最新技術とデザインで、集客できるウェブサイトを実現。",
         siteUrl: "https://www.storyweb-solutions.com",
-        author: "chiba",
+        author: "Story Web Solutions",
         lang: "ja",
-        image: "topimage/topimage.jpg",
+        image: "/images/ogp-image.jpg",
+        keywords: "ウェブサイト制作,ホームページ作成,Web制作会社,SEO対策,レスポンシブデザイン,千葉,東京",
+        address: {
+            streetAddress: "渋谷２－１９－１５宮益坂ビルディング６０９",
+            addressLocality: "渋谷区",
+            addressRegion: "東京都",
+            postalCode: "150-0002",
+            addressCountry: "JP"
+        }
     },
     plugins: [
         `gatsby-plugin-sitemap`,

@@ -1,31 +1,111 @@
-.Footer {
+.footer {
+    width: 100%;
     display: grid;
-    gap: 20px;
-    margin-bottom: 50px;
+    grid-auto-rows: min-content;
+    background-color: #232323;
+    color: #eeeeee;
+    place-items: center;
 }
 
-.Logo {
-    padding-left: 20px;
-    width: 50vw;
-}
-
-.Text {
-    padding-left: 20px;
-}
-
-.Sns {
+.contents {
+    margin: 50px 20px 0 20px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    width: calc(100% - 40px);
     display: grid;
-    gap: 20px;
-    padding-left: 20px;
 }
 
-.Sns a {
-    width: 25px;
-    height: 25px;
+.Title {
+    font-size: 6vw;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.SnsIcon {
-    width: 25px;
-    height: 25px;
+.contact {
+    display: grid;
+    place-self: center;
+    padding: 10px 40px;
+    border-radius: 8px;
+    background-color: #FF913E;
+    font-weight: 500;
+    font-family: var(--font-family-gothic);
 }
 
+.bottoms {
+    margin: 120px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+}
+
+.logo {
+    width: min(200px, 30vw);
+}
+
+.logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.sns {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: end;
+}
+
+.sns img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.copyRight {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (min-width:768px) {
+    .contents {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Title {
+        margin-left: 30px;
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .contact {
+        align-self: start;
+        justify-self: end;
+        margin: 20px 10px;
+    }
+
+    .bottoms {
+        grid-column: 1/-1;
+    }
+
+    .sns {
+        gap: 20px;
+    }
+
+    .sns img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .contents {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Title {
+        font-size: 2em;
+    }
+
+}

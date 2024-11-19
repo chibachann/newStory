@@ -1,0 +1,263 @@
+.Top02 {
+    --_height: 800px;
+    --_wholeHeight: calc(var(--_height) + 20px);
+    display: grid;
+    height: 110vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    color: #eeeeee;
+    background-color: #eeeeee;
+}
+
+.Background {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 110vh;
+}
+
+
+
+.top {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;   
+}
+
+.topcontent {
+    height: 100vh;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30vh min-content min-content min-content;
+}
+
+.logo {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 50%;
+    height: auto;
+    align-self: end;
+    justify-self: center;
+    animation: slideFade 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+.logo img {
+    width: calc(100% - 40px);
+    object-fit: contain;
+}
+
+.Title {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: min-content;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+}
+
+.Title h1 {
+    font-size: 12vw;
+    font-weight: 700;
+    
+    line-height: 1.3;
+    margin-top: 20px;
+}
+
+
+.Title h2 {
+    margin-top: 10px;
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+.viewImages {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    margin: 40px 0 0px 0;
+    place-items: center;
+    justify-self: center;
+    width: 90%;
+    text-align: center;
+    display: grid;
+    border-bottom: 1px solid white;
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.viewImages p {
+    margin: 0;
+    padding: 0;
+}
+
+.topImages {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    margin: 5vh 0;
+    width: 90%;
+    height: 25vh;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-self: center;
+    align-items: center;
+}
+
+.topImages img {
+    width: 100%;
+    height: 95%;
+}
+
+.Box {
+    opacity: 0;
+    animation: slideInLeft 0.7s ease-out forwards;
+}
+ 
+ .Box:nth-child(1) { animation-delay: 1.3s; }
+ .Box:nth-child(2) { animation-delay: 1.6s; }
+ .Box:nth-child(3) { animation-delay: 1.8s; }
+ .Box:nth-child(4) { animation-delay: 2s; }
+
+ @keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+ @keyframes slideFade {
+    0% { 
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
+  
+
+
+@media screen and (min-width:768px){
+    .Top02 {
+        height: calc(100vw * (1100 / 1180) + 20px);
+    }
+    .Background {
+        height: calc(100vw * (1100 / 1180) + 20px);
+    }
+    .topcontent {
+        width: 90%;
+        height: calc(100vw * (800 / 1180));
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 4fr 2fr 5fr;
+    }
+
+    .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Title {
+        grid-column: 2/-1;
+        grid-row: 1/2;
+        text-align: left;
+    }
+    
+    .Title h1 {
+        line-height: 1;
+        font-size: 9vw;
+        margin: 20px 0;
+    }
+
+    .Title h2 {
+        font-size: 2vw;
+    }
+
+    .viewImages {
+        width: 100%;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        margin: calc(100vw * (50 / 1180)) 0 0px 0;
+    }
+
+    .viewImages p {
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
+    }
+
+    .topImages {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    .Top02 {
+        height: 1100px;
+    }
+    .Background {
+        height: 1100px;
+    }
+    .topcontent {
+        width: min(1800px, 90%);
+        height: 850px;
+    }
+    
+    .Title h1 {
+        font-size: 7rem;
+    }
+
+    .Title h2 {
+        font-size: 1.5rem;
+    }
+
+    .viewImages {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    .viewImages p {
+        font-size: 1.5rem;
+    }
+
+    .topImages {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .topImages img {
+        height: min(calc(100% - 40px), 500px);
+    }
+
+}
