@@ -1,1 +1,60 @@
-{}
+{
+  "api": {
+    "contactapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "contactFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "contactFunction": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_contactFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_contactFunction_recipientEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_contactFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_contactFunction_senderEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactFunction"
+        }
+      ]
+    }
+  }
+}

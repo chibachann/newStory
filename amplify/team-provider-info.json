@@ -10,6 +10,40 @@
       "StackName": "amplify-newstorywebsolution-dev-b1dcb",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:269545346091:stack/amplify-newstorywebsolution-dev-b1dcb/c64bb6e0-a650-11ef-8e08-0a1462479aa3",
       "AmplifyAppId": "d2wiqqwogig5la"
+    },
+    "categories": {
+      "function": {
+        "contactFunction": {
+          "recipientEmail": "cny.storywebsolutions@gmail.com",
+          "senderEmail": "cny.storywebsolutions@gmail.com"
+        }
+      }
+    }
+  },
+  "storyweb": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-newstorywebsolution-storyweb-9303b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::269545346091:role/amplify-newstorywebsolution-storyweb-9303b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::269545346091:role/amplify-newstorywebsolution-storyweb-9303b-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-newstorywebsolution-storyweb-9303b-deployment",
+      "UnauthRoleName": "amplify-newstorywebsolution-storyweb-9303b-unauthRole",
+      "StackName": "amplify-newstorywebsolution-storyweb-9303b",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:269545346091:stack/amplify-newstorywebsolution-storyweb-9303b/84afd990-a656-11ef-89e7-0ac239663685",
+      "AmplifyAppId": "d2wiqqwogig5la"
+    },
+    "categories": {
+      "function": {
+        "contactFunction": {
+          "recipientEmail": "",
+          "senderEmail": "",
+          "deploymentBucketName": "amplify-newstorywebsolution-storyweb-9303b-deployment",
+          "s3Key": "amplify-builds/contactFunction-39746b6d754c57304a38-build.zip"
+        }
+      },
+      "api": {
+        "contactapi": {}
+      }
     }
   }
 }
