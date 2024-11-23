@@ -40,7 +40,7 @@ const FeatureNumber03 = () => {
                         <div className={styles.step}>
                             <img src="/featureNumber03/image01.jpg" alt="step01" 
                                 ref={image01Ref}
-                                className={`${styles.image01} ${isImage01Visible ? styles.slideInBottom : styles.zeroOpacity}`}
+                                className={` ${isImage01Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                             />
                         </div>
                         <h3 
@@ -61,7 +61,7 @@ const FeatureNumber03 = () => {
                         <div className={styles.step}>
                             <img src="/featureNumber03/image02.jpg" alt="step02" 
                                 ref={image02Ref}
-                                className={`${styles.image01} ${isImage02Visible ? styles.slideInBottom : styles.zeroOpacity}`}
+                                className={` ${isImage02Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                             />
                         </div>
                         <h3 
@@ -82,7 +82,7 @@ const FeatureNumber03 = () => {
                         <div className={styles.step}>
                             <img src="/featureNumber03/image03.jpg" alt="step01" 
                                 ref={image03Ref}
-                                className={`${styles.image01} ${isImage03Visible ? styles.slideInBottom : styles.zeroOpacity}`}
+                                className={` ${isImage03Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                             />
                         </div>
                         <h3 
@@ -103,7 +103,7 @@ const FeatureNumber03 = () => {
                         <div className={styles.step}>
                             <img src="/featureNumber03/image04.jpg" alt="step01" 
                                 ref={image04Ref}
-                                className={`${styles.image01} ${isImage04Visible ? styles.slideInBottom : styles.zeroOpacity}`}
+                                className={` ${isImage04Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                             />
                         </div>
                         <h3 

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const CreateIntersectionObserver = (threshold = 0.3) => {
     const [isVisible, setIsVisible] = useState(false);

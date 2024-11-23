@@ -14,7 +14,7 @@ import FeatureNumber03 from "../components/FeatureNumber03/FeatureNumber03";
 const Index = () => {
     return (
       <>
-        <Link to="/contact" className={styles.contact}>
+        <Link to="/contact">
                     お問い合わせ
         </Link>
         <Layout>
