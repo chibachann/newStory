@@ -38,7 +38,7 @@ const FeatureNumber01 = () => {
                         ref={textRef}
                         className={`${styles.text} ${isTextVisible ? styles.slideInBottom : styles.zeroOpacity}`}
                     >
-                        SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                       トレンドに合わせたデザインは、ユーザーに好印象を与えます。私たちは常に最新のWebトレンドを取り入れた合わせたオリジナルのデザインをご提供いたします。
                     </p>
                 </div>
                 <div className={styles.images}>

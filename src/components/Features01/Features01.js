@@ -32,7 +32,8 @@ const Features01 = () => {
                     ref={textRef}
                     className={`${styles.text} ${isTextVisible ? styles.slideInBottom : styles.zeroOpacity}`}
                 >
-                    SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                    Webサイトの制作、運用から保守まで、私たちSToRy Web Solutionsにお任せください。
+                    高品質なWebサイトを作成することはもちろん、その後の運用もお客様の成長をご支援する手厚く幅広いサポートをご提供いたします。
                 </p>
 
                 <div 

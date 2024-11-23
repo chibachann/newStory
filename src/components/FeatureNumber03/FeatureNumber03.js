@@ -53,7 +53,7 @@ const FeatureNumber03 = () => {
                             ref={step01Ref}
                             className={`${styles.text} ${isStep01Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                         >
-                            SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                            ご予算を考慮し、お客様の求める価値や品質に対して柔軟な価格をご提案いたします。
                         </p>
                     </div>
                     
@@ -74,7 +74,7 @@ const FeatureNumber03 = () => {
                             ref={step02Ref}
                             className={`${styles.text} ${isStep02Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                         >
-                            SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                            Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、多くのサービスを提供いたします。
                         </p>
                     </div>
 
@@ -95,7 +95,7 @@ const FeatureNumber03 = () => {
                             ref={step03Ref}
                             className={`${styles.text} ${isStep03Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                         >
-                            SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                            お客様に継続的かつ効果的にWebサイトを活用していただけるよう、構築から運用まで幅広くご支援いたします。
                         </p>
                     </div>
 
@@ -116,7 +116,7 @@ const FeatureNumber03 = () => {
                             ref={step04Ref}
                             className={`${styles.text} ${isStep04Visible ? styles.slideInBottom : styles.zeroOpacity}`}
                         >
-                            SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                            お客様のご予算に合わせて柔軟にご対応いたします。お気軽にご相談ください。
                         </p>
                     </div>
                 </div>

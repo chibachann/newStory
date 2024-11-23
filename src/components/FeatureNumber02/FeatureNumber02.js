@@ -37,7 +37,7 @@ const FeatureNumber02 = () => {
                             SEO対策
                         </h3>
                         <p className={styles.text}>
-                        SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                        サイトが次検索エンジンで上位に表示されるよう、SEOを意識してWebサイトを構築いたします。また、SEO相対評価を見ながら高い基準で管理・運営いたします。
                         </p>
                     </div>
 
@@ -50,7 +50,7 @@ const FeatureNumber02 = () => {
                             サポート体制
                         </h3>
                         <p className={styles.text}>
-                        SToRy Web Solutionsは、Webサイト制作を中心に、Webマーケティング、 コンテンツ制作など、 お客様のビジネスをトータルでサポートする会社です。
+                        サイトの構築から公開後の運用、改善に至るまで、お客様に安心してサービスをご利用いただけるよう、誠心誠意サポートいたします。
                         </p>
                     </div>
                 </div>
