@@ -17,9 +17,7 @@ const Footer = () => {
                 >
                     お問い合わせ
                 </a>
-                <Link to="/contact" className={styles.contact}>
-                    お問い合わせ
-                </Link>
+                
 
                 <div className={styles.bottoms}>
                     <div className={styles.logo}>

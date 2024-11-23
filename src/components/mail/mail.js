@@ -9,6 +9,7 @@ const ContactForm = () => {
         message: ''
     });
     const [loading, setLoading] = useState(false);
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -32,6 +33,21 @@ const ContactForm = () => {
     const handleChange = (e) => {
         setFormState({ ...formState, [e.target.name]: e.target.value });
     };
+
+
+    // API接続テスト
+    useEffect(() => {
+        const testAPI = async () => {
+            try {
+                const response = await API.get('contactapi', '/contact');
+                console.log('API接続テスト成功:', response);
+            } catch (error) {
+                console.error('API接続テスト失敗:', error);
+            }
+        };
+        
+        testAPI();
+    }, []);
 
     return (
         <form onSubmit={handleSubmit}>
