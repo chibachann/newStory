@@ -1,4 +1,12 @@
+// gatsby-config.js
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+  });
+
 module.exports = {
+    flags: {
+        DEV_SSR: true
+      },
     siteMetadata: {
         title: 'ウェブサイト制作・ホームページ作成 | Story Web Solutions',
         description: "【東京・千葉・埼玉・神奈川】プロフェッショナルなウェブサイト制作・ホームページ制作なら Story Web Solutions。最新技術とデザインで、集客できるウェブサイトを実現。",
@@ -13,7 +21,12 @@ module.exports = {
             addressRegion: "東京都",
             postalCode: "150-0002",
             addressCountry: "JP"
-        }
+        },
+        apiEndpoints: {
+            test: process.env.GATSBY_API_TEST_ENDPOINT,
+            lambda: process.env.GATSBY_API_LAMBDA_TEST_ENDPOINT,
+            email: process.env.GATSBY_API_EMAIL_ENDPOINT,
+          },
     },
     plugins: [
         `gatsby-plugin-sitemap`,

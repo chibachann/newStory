@@ -20,6 +20,7 @@ const Footer = () => {
                         <Link to="/column">会社概要</Link>
                     </div>
                     <div className={styles.menuColumn}>
+                        <Link to="/apiTestPage">API test</Link>
                         <Link to="/sitePolicyPage">サイトポリシー</Link>
                         <Link to="/privacyPolicyPage">個人情報保護方針</Link>
                     </div>
