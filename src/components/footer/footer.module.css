@@ -1,0 +1,93 @@
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex; /* 追加 */
+    justify-content: space-between; /* 追加 */
+    flex-wrap: wrap; /* 追加 */
+}
+
+.leftSection {
+    flex: 0 1 auto; /* 追加 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 30px 0;
+}
+
+.contactButton {
+    background-color: #FF6E00;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.contactButton:hover {
+    background-color: #DC5F00;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menuSection {
+    flex: 0 1 auto; /* 追加 */
+    display: flex;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.menuColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menuColumn a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.menuColumn a:hover {
+    color: #EE7C26;
+}
+
+.bottomSection {
+    flex-basis: 100%; /* 追加 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcons img {
+    width: 24px;
+    height: 24px;
+}

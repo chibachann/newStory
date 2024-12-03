@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import { useStaticQuery, graphql } from 'gatsby';
-import { Link } from 'gatsby';
 
 import Top02 from "../components/Top02/Top02";
 import About02 from "../components/About02/About02";
@@ -13,10 +12,6 @@ import FeatureNumber03 from "../components/FeatureNumber03/FeatureNumber03";
 
 const Index = () => {
     return (
-      <>
-        <Link to="/contact">
-                    お問い合わせ
-        </Link>
         <Layout>
             <Top02 />
             <About02 />
@@ -26,7 +21,6 @@ const Index = () => {
             <FeatureNumber02 />
             <FeatureNumber03 />
         </Layout>
-      </>
     );
 };
 
