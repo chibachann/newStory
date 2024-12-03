@@ -20,8 +20,14 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-              icon: `static/favicon/favicon.png`, // 使用するファビコン画像のパス
-            },
+                name: `SToRy Web Solutions`,
+                short_name: `SToRy`,
+                start_url: `/`,
+                background_color: `#f0f0f0`,
+                theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `static/favicon/favicon.png`,
+              },
         },
     ],
 }
