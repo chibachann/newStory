@@ -16,11 +16,10 @@ const Footer = () => {
                 <div className={styles.menuSection}>
                     <div className={styles.menuColumn}>
                         <Link to="/">サービス</Link>
-                        <Link to="/profile">会社案内</Link>
-                        <Link to="/column">会社概要</Link>
+                        <Link to="/">会社案内</Link>
+                        <Link to="/">会社概要</Link>
                     </div>
                     <div className={styles.menuColumn}>
-                        <Link to="/apiTestPage">API test</Link>
                         <Link to="/sitePolicyPage">サイトポリシー</Link>
                         <Link to="/privacyPolicyPage">個人情報保護方針</Link>
                     </div>
@@ -29,13 +28,7 @@ const Footer = () => {
                 <div className={styles.bottomSection}>
                     <p className={styles.copyright}>© SToRy Web Solutions</p>
                     <div className={styles.socialIcons}>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                            <img src="/icon/facebook.svg" alt="Facebook" />
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img src="/icon/twitter.svg" alt="Twitter" />
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/story_web_solutions/" target="_blank" rel="noopener noreferrer">
                             <img src="/icon/instagram.svg" alt="Instagram" />
                         </a>
                     </div>

@@ -22,8 +22,8 @@ const Header = () => {
             <nav className={styles.pcNav}>
                 <ul>
                     <li><Link to="/">サービス</Link></li>
-                    <li><Link to="/profile">会社案内</Link></li>
-                    <li><Link to="/column">会社概要</Link></li>
+                    <li><Link to="/">会社案内</Link></li>
+                    <li><Link to="/">会社概要</Link></li>
                 </ul>
             </nav>
 
@@ -50,8 +50,8 @@ const Header = () => {
             <nav className={`${styles.spNav} ${isMenuOpen ? styles.open : ''}`}>
                 <ul>
                     <li><Link to="/" onClick={toggleMenu}>サービス</Link></li>
-                    <li><Link to="/profile" onClick={toggleMenu}>会社案内</Link></li>
-                    <li><Link to="/column" onClick={toggleMenu}>会社概要</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>会社案内</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>会社概要</Link></li>
                 </ul>
                 <Link to="/contactPage" className={styles.contactBtnMobile}>
                     お問い合わせはこちら
