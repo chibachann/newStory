@@ -35,6 +35,9 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
+      console.log('現在のオリジン:', window.location.origin); // デバッグ用
+      console.log('送信データ:', formData); // デバッグ用
+
       // フォームデータのバリデーション
       if (!formData.name || formData.inquiryType.length === 0 || (!formData.email && !formData.tel)) {
         throw new Error('必須項目を入力してください');
