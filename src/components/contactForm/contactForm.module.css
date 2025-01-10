@@ -211,6 +211,8 @@
       flex-direction: column;
       gap: 15px;
       padding: 0 20px;
+      display: grid;
+      justify-items: center;
     }
     
     .buttonGroup button,
