@@ -1,0 +1,81 @@
+.Top {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    position: relative;
+    color: white;
+}
+
+.MainContent {
+    position: relative;
+    padding: 60px 40px;
+}
+
+.BackgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.TextContent {
+    position: relative;
+    z-index: 2;
+}
+.Title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: var(--font-family-gothic);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation: blockReveal 1.5s cubic-bezier(.77, 0, .175, 1) forwards;
+    opacity: 0;
+}
+
+@keyframes blockReveal {
+    0% {
+        opacity: 0;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        transform: translateX(-20px);
+    }
+    30% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transform: translateX(0);
+    }
+}
+
+.SubTitle {
+    font-size: 52px;
+    font-weight: 500;
+    font-family: var(--font-family-gothic);
+    margin-bottom: 30px;
+    animation: blockReveal 1.5s cubic-bezier(.77, 0, .175, 1) forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.Description {
+    font-size: 18px;
+    line-height: 1.6;
+    animation: blockReveal 1.5s cubic-bezier(.77, 0, .175, 1) forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.BackgroundEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,1));
+    z-index: 1;
+}

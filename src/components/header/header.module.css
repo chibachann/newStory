@@ -15,6 +15,14 @@
     animation-delay: 1s;
     opacity: 0;
   }
+
+  .visible {
+    transform: translateY(0);
+  }
+
+  .hidden {
+      transform: translateY(-100%);
+  }
   
   /* ナビゲーション */
   .pcNav {

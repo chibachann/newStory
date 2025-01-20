@@ -18,12 +18,14 @@ const Header = () => {
     return (
         <header className={styles.header}>
             {/* PC用ナビゲーション */}
-            <img src="/logo/whitelogo.png" alt="ロゴ" className={styles.logo} />
+            <Link to="/" className={styles.logoLink}>
+                <img src="/logo/whitelogo.png" alt="ロゴ" className={styles.logo} />
+            </Link>
             <nav className={styles.pcNav}>
                 <ul>
-                    <li><Link to="/">サービス</Link></li>
-                    <li><Link to="/">会社案内</Link></li>
-                    <li><Link to="/">会社概要</Link></li>
+                    <li><Link to="/">ホーム</Link></li>
+                    <li><Link to="/servicePage">サービス</Link></li>
+                    <li><Link to="/companyInfoPage">会社概要</Link></li>
                 </ul>
             </nav>
 
@@ -49,9 +51,9 @@ const Header = () => {
             {/* スマホ用サイドナビゲーション */}
             <nav className={`${styles.spNav} ${isMenuOpen ? styles.open : ''}`}>
                 <ul>
-                    <li><Link to="/" onClick={toggleMenu}>サービス</Link></li>
-                    <li><Link to="/" onClick={toggleMenu}>会社案内</Link></li>
-                    <li><Link to="/" onClick={toggleMenu}>会社概要</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>ホーム</Link></li>
+                    <li><Link to="/servicePage" onClick={toggleMenu}>サービス</Link></li>
+                    <li><Link to="/companyInfoPage" onClick={toggleMenu}>会社概要</Link></li>
                 </ul>
                 <Link to="/contactPage" className={styles.contactBtnMobile}>
                     お問い合わせはこちら

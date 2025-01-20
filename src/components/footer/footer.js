@@ -7,7 +7,9 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.footerContent}>
                 <div className={styles.leftSection}>
-                    <img src="/logo/whitelogo.png" alt="Logo" className={styles.logo} />
+                    <Link to="/" className={styles.logoLink}>
+                        <img src="/logo/whitelogo.png" alt="Logo" className={styles.logo} />
+                    </Link>
                     <Link to="/contactPage" className={styles.contactButton}>
                         お問い合わせはこちら
                     </Link>
@@ -15,9 +17,8 @@ const Footer = () => {
                 
                 <div className={styles.menuSection}>
                     <div className={styles.menuColumn}>
-                        <Link to="/">サービス</Link>
-                        <Link to="/">会社案内</Link>
-                        <Link to="/">会社概要</Link>
+                        <Link to="/servicePage">サービス</Link>
+                        <Link to="/companyInfoPage">会社概要</Link>
                     </div>
                     <div className={styles.menuColumn}>
                         <Link to="/sitePolicyPage">サイトポリシー</Link>
