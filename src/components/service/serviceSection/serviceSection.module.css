@@ -42,10 +42,8 @@
 }
 
 .cardSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 1000px;
+    display: grid;
+    width: 100%;
 }
 
 .card {
@@ -59,6 +57,8 @@
     width: 100%;
     max-width: 400px;
     opacity: 0;
+    display: grid;
+    justify-items: center;
     animation: fadeIn 0.8s ease forwards 0.3s;
 }
 
@@ -87,6 +87,7 @@
     font-size: 14px;
     line-height: 1.6;
     opacity: 0.8;
+    text-align: left;
 }
 
 @keyframes fadeIn {
@@ -106,7 +107,7 @@
     }
     
     .card {
-        padding: 20px;
+        padding: 20px 0px;
         margin: 0 auto;
     }
     
@@ -116,6 +117,8 @@
     }
 
     .card p {
+        width: 95%;
+
         text-align: left;
     }
 }

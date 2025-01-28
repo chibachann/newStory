@@ -21,8 +21,8 @@ const Footer = () => {
                         <Link to="/companyInfoPage">会社概要</Link>
                     </div>
                     <div className={styles.menuColumn}>
-                        <Link to="/sitePolicyPage">サイトポリシー</Link>
-                        <Link to="/privacyPolicyPage">個人情報保護方針</Link>
+                        <Link to="/">サイトポリシー</Link>
+                        <Link to="/">個人情報保護方針</Link>
                     </div>
                 </div>
 

@@ -1,0 +1,100 @@
+/* PrivacyPolicy.module.css */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 2rem;
+    background-color: #eeeeee;
+    color: #232323;
+    line-height: 1.6;
+  }
+  
+  .mainTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #232323;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 1rem;
+  }
+  
+  .section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #232323;
+    border-left: 4px solid #232323;
+    padding-left: 1rem;
+  }
+  
+  .introduction {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  
+  .orgInfo {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .infoItem {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .policyItem {
+    margin-bottom: 2rem;
+  }
+  
+  .policyItem h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #232323;
+  }
+  
+  .purposeList {
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
+  
+  .purposeList li {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .purposeList li::before {
+    content: "•";
+    position: absolute;
+    left: -1.5rem;
+    color: #232323;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 20vw 1rem;
+    }
+  
+    .section {
+      padding: 1.5rem;
+    }
+  
+    .infoItem {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  
+    .mainTitle {
+      font-size: 1.5rem;
+    }
+  }

@@ -9,7 +9,7 @@ module.exports = {
       },
     siteMetadata: {
         title: 'ウェブサイト制作・ホームページ作成 | Story Web Solutions',
-        description: "【東京・千葉・埼玉・神奈川】プロフェッショナルなウェブサイト制作・ホームページ制作なら Story Web Solutions。最新技術とデザインで、集客できるウェブサイトを実現。",
+        description: "東京都渋谷区のWeb制作会社。チャットボット開発、ECサイト構築、決済システム導入、顧客管理システム開発など、最適なWebソリューションを提供します。",
         siteUrl: "https://www.storyweb-solutions.com",
         author: "Story Web Solutions",
         lang: "ja",
